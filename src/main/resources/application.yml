@@ -1,0 +1,18 @@
+spring:
+  resources:
+    static-locations: classpath:/
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://192.168.1.66:3306/spring-security-login?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: rootFwtai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+server:
+  port: 8083
+  error:
+    whitelabel:
+      enabled: true
